@@ -11,7 +11,7 @@ namespace Ofl.Hashing.FowlerNollVo1A
 
         private const uint Offset = 2166136261;
 
-        private byte[] _current;
+        private byte[]? _current;
 
         private ReadOnlyMemory<byte> _currentRom;
 

@@ -11,7 +11,7 @@ namespace Ofl.Hashing.FowlerNollVo1A
 
         private const ulong Offset = 14695981039346656037;
 
-        private byte[] _current;
+        private byte[]? _current;
 
         private ReadOnlyMemory<byte> _currentRom;
 

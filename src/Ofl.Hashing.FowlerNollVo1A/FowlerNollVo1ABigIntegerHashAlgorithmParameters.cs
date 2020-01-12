@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace Ofl.Hashing.FowlerNollVo1A
 {
-    public class FowlerNollVo1ABigIntegerHashAlgorithmParameters
+    public readonly struct FowlerNollVo1ABigIntegerHashAlgorithmParameters
     {
         #region Constructor
 

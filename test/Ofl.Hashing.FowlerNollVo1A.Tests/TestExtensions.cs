@@ -22,7 +22,7 @@ namespace Ofl.Hashing.FowlerNollVo1A.Tests
             var bytes = new List<byte>();
 
             // Cycle through the elements in the array.
-            foreach (object item in array)
+            foreach (object? item in array)
             {
                 // Sniff the type.
                 var str = item as string;

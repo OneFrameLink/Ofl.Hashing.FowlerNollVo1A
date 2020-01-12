@@ -11,7 +11,7 @@ namespace Ofl.Hashing.FowlerNollVo1A
         protected FowlerNollVo1ABigIntegerHashAlgorithm(FowlerNollVo1ABigIntegerHashAlgorithmParameters parameters)
         {
             // Validate parameters.
-            _parameters = parameters ?? throw new ArgumentNullException(nameof(parameters));
+            _parameters = parameters;
         }
 
         #endregion
@@ -33,7 +33,7 @@ namespace Ofl.Hashing.FowlerNollVo1A
         public void TransformBlock(ReadOnlySpan<byte> bytes)
         {
             // Set current if not set.
-            _current = _current ?? _parameters.Offset;
+            _current ??= _parameters.Offset;
 
             // The bytes.
             int size = HashSize / 8;
