@@ -10,7 +10,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Ofl.Hashing.Abstractions" Version="3.0.5" />
+    <PackageReference Include="Ofl.Hashing.Abstractions" Version="3.0.6" />
     <PackageReference Include="Ofl.Numerics" Version="2.0.5" />
   </ItemGroup>
 </Project>

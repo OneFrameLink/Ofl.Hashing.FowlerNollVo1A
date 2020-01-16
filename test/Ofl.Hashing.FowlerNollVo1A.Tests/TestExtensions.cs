@@ -25,11 +25,10 @@ namespace Ofl.Hashing.FowlerNollVo1A.Tests
             foreach (object? item in array)
             {
                 // Sniff the type.
-                var str = item as string;
-                if (str != null)
+                if (item is string str)
                 {
                     // Add.
-                    bytes.AddRange(Encoding.ASCII.GetBytes(str));
+                    bytes.AddRange(Encoding.UTF8.GetBytes(str));
 
                     // Continue.
                     continue;
